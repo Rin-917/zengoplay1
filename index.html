@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -110,11 +109,12 @@
             padding: 100px 5%;
         }
         
-        /* Contact form styling */
+        /* Contact form styling - PREVIOUS SIMPLE DESIGN */
         .contact-form {
             background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
         
         /* Responsive adjustments */
@@ -423,115 +423,99 @@
         </div>
     </section>
 
-    <!-- Footer with Emergency Help and Contact Lab -->
-    <footer id="help" class="bg-blue-900 text-white py-16 px-5%">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-12 mb-12">
-                <div>
-                    <h4 class="text-2xl font-bold mb-6">Emergency Help</h4>
-                    <p class="text-blue-200 mb-6">
-                        If games and breathing aren't enough, it's okay to reach out for support.
-                    </p>
-                    <div class="space-y-4">
-                        <a href="tel:1-800-273-8255" class="emergency-link bg-gray-800 p-4 rounded-lg block hover:bg-gray-700">
-                            <p class="font-bold text-blue-400 hover:text-blue-300">Campus Counseling Hotline</p>
-                            <p class="text-sm opacity-75 mt-1">24/7 Confidential Support • Click to call: 1-800-273-8255</p>
-                        </a>
-                        <a href="https://suicidepreventionlifeline.org" target="_blank" class="emergency-link bg-gray-800 p-4 rounded-lg block hover:bg-gray-700">
-                            <p class="font-bold text-blue-400 hover:text-blue-300">Student Union Support</p>
-                            <p class="text-sm opacity-75 mt-1">Peer-to-peer counseling • Click for online resources</p>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="text-right">
-                    <h4 class="text-2xl font-bold mb-6">Contact Lab</h4>
-                    <p class="text-blue-200 mb-6">
-                        Pantheon Museum • Borghese Gallery • Sistine Chapel
-                    </p>
-                    <div class="mt-8 flex justify-end gap-6 text-2xl">
-                        <!-- INSTAGRAM -->
-                        <a href="https://www.instagram.com/playzengo_official/" target="_blank" class="hover:text-blue-400 transition-colors">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <!-- TWITTER/X -->
-                        <a href="https://x.com/ZengoPlay1" target="_blank" class="hover:text-blue-400 transition-colors">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <!-- FACEBOOK - ADDED -->
-                        <a href="https://web.facebook.com/profile.php?id=61586685204407" target="_blank" class="hover:text-blue-400 transition-colors">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <!-- EMAIL -->
-                        <a href="mailto:zengoplay@gmail.com" class="hover:text-blue-400 transition-colors">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <!-- Comment Section - PREVIOUS SIMPLE DESIGN -->
+    <section id="contact" class="py-20 px-6 w-full bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-bold mb-8 text-center">Send Us a Message</h3>
             
-            <!-- NEW: Comment Section -->
-            <div id="contact" class="mt-16 pt-12 border-t border-blue-800">
-                <h4 class="text-2xl font-bold mb-8 text-center">Send Us a Message</h4>
-                
-                <form id="commentForm" class="contact-form p-8 max-w-2xl mx-auto">
-                    <div class="grid md:grid-cols-2 gap-6 mb-6">
-                        <div>
-                            <label for="name" class="block text-blue-200 mb-2">Name</label>
-                            <input type="text" id="name" name="name" 
-                                   class="w-full bg-blue-800 border border-blue-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-400"
-                                   required>
-                        </div>
-                        
-                        <div>
-                            <label for="email" class="block text-blue-200 mb-2">Email</label>
-                            <input type="email" id="email" name="email" 
-                                   class="w-full bg-blue-800 border border-blue-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-400"
-                                   required>
-                        </div>
-                    </div>
-                    
-                    <div class="mb-6">
-                        <label for="subject" class="block text-blue-200 mb-2">Subject</label>
-                        <input type="text" id="subject" name="subject" 
-                               class="w-full bg-blue-800 border border-blue-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-400"
+            <form id="commentForm" class="contact-form card-shadow">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 mb-2">Name</label>
+                        <input type="text" id="name" name="name" 
+                               class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500"
                                required>
                     </div>
                     
-                    <div class="mb-6">
-                        <label for="message" class="block text-blue-200 mb-2">Message</label>
-                        <textarea id="message" name="message" rows="5"
-                                  class="w-full bg-blue-800 border border-blue-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-400"
-                                  required></textarea>
+                    <div>
+                        <label for="email" class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" name="email" 
+                               class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500"
+                               required>
                     </div>
-                    
-                    <button type="submit" 
-                            class="w-full bg-white text-blue-900 hover:bg-blue-50 font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
-                        <i class="fas fa-paper-plane"></i>
-                        Send Message to zengoplay@gmail.com
-                    </button>
-                </form>
-                
-                <!-- Form Status Messages -->
-                <div id="formStatus" class="mt-6 text-center hidden">
-                    <p class="text-green-300 font-bold" id="successMessage">Message sent successfully to zengoplay@gmail.com!</p>
-                    <p class="text-red-300 font-bold" id="errorMessage">Failed to send message. Please try again.</p>
                 </div>
                 
-                <!-- Direct Email Link -->
-                <div class="text-center mt-8">
-                    <p class="text-blue-200 mb-4">Or email directly:</p>
-                    <a href="mailto:zengoplay@gmail.com" 
-                       class="inline-flex items-center gap-2 text-white hover:text-blue-300 text-lg bg-blue-800 hover:bg-blue-700 px-6 py-3 rounded-full transition-all">
+                <div class="mb-6">
+                    <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                    <input type="text" id="subject" name="subject" 
+                           class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500"
+                           required>
+                </div>
+                
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 mb-2">Message</label>
+                    <textarea id="message" name="message" rows="5"
+                              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500"
+                              required></textarea>
+                </div>
+                
+                <button type="submit" 
+                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message to zengoplay@gmail.com
+                </button>
+            </form>
+            
+            <!-- Form Status Messages -->
+            <div id="formStatus" class="mt-6 text-center hidden">
+                <p class="text-green-600 font-bold" id="successMessage">Message sent successfully!</p>
+                <p class="text-red-600 font-bold" id="errorMessage">Failed to send message. Please try again.</p>
+            </div>
+            
+            <!-- Direct Email Link -->
+            <div class="text-center mt-8">
+                <p class="text-gray-600 mb-4">Or email directly:</p>
+                <a href="mailto:zengoplay@gmail.com" 
+                   class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 text-lg">
+                    <i class="fas fa-envelope"></i>
+                    zengoplay@gmail.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - PREVIOUS SIMPLE DESIGN -->
+    <footer id="help" class="bg-gray-900 text-white py-16 px-6 w-full">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+            <div>
+                <h4 class="text-2xl font-bold mb-4">Emergency Help</h4>
+                <p class="opacity-80 mb-6">If games and breathing aren't enough, it's okay to reach out for support.</p>
+                <div class="space-y-2 font-bold text-blue-400">
+                    <p>Campus Counseling Hotline</p>
+                    <p>Student Union Support</p>
+                </div>
+            </div>
+            <div class="text-right">
+                <h4 class="text-2xl font-bold mb-4">Contact Lab</h4>
+                <p class="opacity-70 mb-6">Pantheon Museum • Borghese Gallery • Sistine Chapel</p>
+                <div class="mt-8 flex justify-end gap-6 text-2xl">
+                    <a href="https://www.instagram.com/playzengo_official/" target="_blank" class="hover:text-blue-400 transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/ZengoPlay1" target="_blank" class="hover:text-blue-400 transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://web.facebook.com/profile.php?id=61586685204407" target="_blank" class="hover:text-blue-400 transition-colors">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="mailto:zengoplay@gmail.com" class="hover:text-blue-400 transition-colors">
                         <i class="fas fa-envelope"></i>
-                        zengoplay@gmail.com
                     </a>
                 </div>
             </div>
-            
-            <div class="text-center mt-16 pt-8 border-t border-blue-800 text-blue-300 text-sm">
-                ©️ 2024 Zengo Play Lab. All rights reserved.
-            </div>
+        </div>
+        <div class="text-center mt-12 pt-8 border-t border-gray-800 opacity-50 text-sm">
+            ©️ 2024 Zengo Play Lab. All rights reserved.
         </div>
     </footer>
 
@@ -571,14 +555,14 @@
             }
         });
         
-        // Contact form handling
+        // Contact form handling - WITH YOUR FORMSPREE URL
         document.getElementById('commentForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
             const formData = new FormData(this);
             const data = Object.fromEntries(formData);
             
-            // Send email using Formspree (free service)
+            // Send email using your Formspree URL
             fetch('https://formspree.io/f/xeeeqrbr', {
                 method: 'POST',
                 headers: {
